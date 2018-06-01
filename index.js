@@ -14,7 +14,7 @@ exports.whois = function whois(req, res){
     if(err){
       return res.status( 500 ).send( 'Something went wrong on our end.' );
     }else{
-      console.log(data);
+      return res.status( 200 ).send( data );
     }
   });
 }
