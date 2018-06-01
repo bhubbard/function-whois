@@ -1,0 +1,8 @@
+{
+  "name": "sample-http",
+  "version": "0.0.1",
+  "dependencies" : {
+    "whois" : "2.6.0",
+    "url"   : "0.11.0"
+  }
+}
