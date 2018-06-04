@@ -17,7 +17,9 @@ exports.whoIs = function whoIs(req, res){
     return res.status( 420 ).send( 'Missing required \'domain\' parameter.' );
   }
   
-  whois.lookup(url.host, function(err, data) {
+  whois.lookup(url.host, {
+  	follow: 5
+  },function(err, data) {
     if(err){
       return res.status( 500 ).send( 'Something went wrong on our end.' );
     }else{
